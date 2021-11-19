@@ -1,11 +1,16 @@
 :root{
     --purple-bg : rgb(105, 28, 105);
+    --textpurple: purple;
 }
 body{
     background-color: rgb(214, 211, 211);
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
+}
+
+.text-purple{
+    color: var(--textpurple)
 }
 
 .navbar-container{
@@ -92,3 +97,13 @@ body{
 .carousel-indicators{
     display: hide;
 }
+
+.flashdeal-info-box {
+    border: 3px dotted var(--purple-bg);
+    color: var(--textpurple);
+    height:200px;
+    width: 200px;
+
+}
+
+
