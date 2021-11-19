@@ -1,7 +1,94 @@
+:root{
+    --purple-bg : rgb(105, 28, 105);
+}
 body{
     background-color: rgb(214, 211, 211);
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
+.navbar-container{
+    background-color: rgba(0, 0, 0, 0.822);
+    position:fixed;
+    z-index: 3;
+    width: 100%;
+    
+}
 
+.navbar{
+    margin: 0 30px;
+    
+}
 
+.navbar i{
+    color:rgba(255, 255, 255, 0.747);
+    margin-left: 30px;
+}
+    
 
+.navbar-brand img{
+    width: 30px;
+}
+
+.nav-link{
+    color:rgba(255, 255, 255, 0.747);
+    font-size: 15px;
+    margin: 0 10px;
+    
+}
+
+.nav-link span{
+    color:rgba(227, 135, 250, 0.747);
+}
+
+.front-pic{
+    position: relative;
+    background-image: url(/gog-assets/front.jpg);
+    min-height:400px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.front-pic div{
+    position:absolute;
+    font-size: 20px;
+    color:white;
+    bottom: 10%;
+    left: 3%;
+}
+
+.carousel-inner{
+    position: relative;
+   
+}
+.carousel-text-box{
+    position:absolute;
+    margin-left: 1.5rem;
+    width: 95%;
+    z-index: 10;
+    bottom: 0;
+    left: 0;
+}
+
+.carousel-text-box div span:first-of-type{
+    background-color: var(--purple-bg);
+    padding:3px;
+    margin:5px;
+}
+.carousel-control-prev-icon, .carousel-control-next-icon{
+    border: 2px solid white;
+    padding: 10px;
+    border-radius: 50%;
+    
+}
+.carousel-control-prev-icon{
+    margin-right: 200px;
+}
+.carousel-control-next-icon{
+    margin-left: 200px;
+}
+
+.carousel-indicators{
+    display: hide;
+}
