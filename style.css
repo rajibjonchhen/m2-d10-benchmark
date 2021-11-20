@@ -7,6 +7,15 @@ body{
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
+    
+}
+
+.purple-bg{
+    background-color: var(--purple-bg);
+    color: white;
+    padding: 5px;
+    margin: 5px;
+    
 }
 
 .text-purple{
@@ -16,7 +25,7 @@ body{
 .navbar-container{
     background-color: rgba(0, 0, 0, 0.822);
     position:fixed;
-    z-index: 3;
+    z-index: 100;
     width: 100%;
     
 }
@@ -69,6 +78,7 @@ body{
 }
 .carousel-text-box{
     position:absolute;
+    font-size: 1rem;
     margin-left: 1.5rem;
     width: 95%;
     z-index: 10;
@@ -76,11 +86,8 @@ body{
     left: 0;
 }
 
-.carousel-text-box div span:first-of-type{
-    background-color: var(--purple-bg);
-    padding:3px;
-    margin:5px;
-}
+
+
 .carousel-control-prev-icon, .carousel-control-next-icon{
     border: 2px solid white;
     padding: 10px;
@@ -106,4 +113,41 @@ body{
 
 }
 
+.first-divider div:nth-of-type(2){
+border-right:3px solid rgb(202, 195, 195);
 
+}
+
+.sale-box li{
+padding:10px;
+}
+
+footer{
+    background-color: rgb(41, 39, 39);
+    color:rgb(216, 215, 215);
+}
+
+footer div:nth-of-type(2){
+    background-color: rgb(49, 46, 46);
+}
+
+footer div:nth-of-type(2) button{
+    background-image: url(/gog-assets/btn.png) ;
+    width: 200px;
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 11x;
+    font-weight: 200;
+}
+
+footer div:nth-of-type(2) button:hover{
+    background-image: white;
+box-shadow: 10px 10px 10px 10px white;
+}
+
+.sale-box li:hover {
+    border-bottom: 3px solid var(--purple-bg);
+    padding:10px;
+    }
+    
