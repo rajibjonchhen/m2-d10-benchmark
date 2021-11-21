@@ -126,6 +126,22 @@ border-right:3px solid rgb(202, 195, 195);
 }
 
 /* now on sale section */
+.onsale-position-container{
+    position:relative;
+}
+
+.onsale-featured-deal{
+    background-color: var(--grey-bg);
+}
+
+.onsale-donclick-section{
+    position: absolute;
+    background-color: var(--grey-bg);
+    top:0;
+    left: 0;
+   opacity: 0;
+}
+
 .onsale-section li{
 padding:10px;
 }
@@ -136,6 +152,10 @@ padding:10px;
 }
 
 
+/* featured section */
+.featured-section img{
+    border: 2px solid var(--grey-bg)
+}
 /* footer */
 footer{
     background-color: rgb(41, 39, 39);
@@ -146,14 +166,14 @@ footer div:nth-of-type(2){
     background-color: rgb(49, 46, 46);
 }
 
-footer div:nth-of-type(2) button{
+footer div button{
     background-image: url(/gog-assets/btn.png) ;
-    width: 200px;
+    width: 160px;
     color: white;
     border-radius: 10px;
-    font-size: 11x;
-    font-weight: 200;
+  
 }
+
 
 footer div:nth-of-type(2) button:hover{
    
@@ -166,12 +186,16 @@ footer div:nth-of-type(2) button:hover{
   
 }
 
-footer li, footer p,footer i{
+footer li, footer p{
+    font-weight: 100;
     padding: 5px;
-    font-size: 12px;
-    color: var(--textgrey);
+    font-size: 14px;
+    color: grey;
 }
-
+footer i{
+    font-size: 20px;
+    padding:7px;
+}
 footer b{
     color: rgb(228, 222, 222);
 }
